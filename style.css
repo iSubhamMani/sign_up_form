@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-dark: #382133;
+    --main-light: #77536F;
+    --secondary-dark: #8b8a8a;
+    --secondary-light: #c8c7c7;
+}
+
+body{
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+}
+
+.container{
+    flex-grow: 1;
+    display: flex;
+
+}
+
+.container > .hero-image{
+    width: 50%;
+
+    background-color: var(--main-dark);
+}
+
+.container > .hero-image > img{
+    width: 100%;
+}
+
+.container > .form-container{
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 20px 50px 100px;
+}
+
+.container .form-container > h1{
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+    line-height: 1.2;
+    color: var(--main-light);
+}
+
+.container .form-container > p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondary-dark);
+    margin-bottom: 40px;
+}
+
+.container .form-container > form{
+    width: 100%;
+}
+
+.container .form-container .form-row{
+    margin-bottom: 30px;
+}
+
+.container .form-container .form-row label{
+    display: block;
+    color: var(--secondary-dark);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.container .form-container .form-row input{
+    width: min(80%, 400px);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--secondary-light);
+    font-size: 1.4rem;
+}
+
+.container .form-container .form-row input:focus{
+    border-bottom: 2px solid var(--main-light);
+}
+
+.container .form-container .form-row input::placeholder{
+    color: var(--secondary-light);
+}
+
+.container .form-container .sign-up-btn{
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: var(--main-light);
+    border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 16px 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    
+    width: min(80%, 400px);
+}
+
+.container .form-container .sign-up-btn:hover{
+    background-color: var(--main-dark);
+    transition: 0.4s;
+}
+
+.container .form-container .sign-in-btn{
+    text-decoration: none;
+    color: var(--main-light);
+    font-weight: 600;
+}

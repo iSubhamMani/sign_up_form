@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -23,15 +24,18 @@
             <form action="">
                 <div class="form-row">
                     <label for="fname">FIRST NAME *</label>
-                    <input type="text" id="fname" placeholder="John" pattern="^([a-zA-Z]).?$" required>
+                    <input class="check-validity" type="text" id="fname" placeholder="John" pattern="^([a-zA-Z]+).?$" minlength="2" required>
+                    <span></span>
                 </div>
                 <div class="form-row">
                     <label for="lname">LAST NAME *</label>
-                    <input type="text" id="lname" placeholder="Doe" pattern="^([a-zA-Z]).?$" required>
+                    <input class="check-validity" type="text" id="lname" placeholder="Doe" pattern="^([a-zA-Z]+).?$" minlength="2" required>
+                    <span></span>
                 </div>
                 <div class="form-row">
                     <label for="email">EMAIL *</label>
-                    <input type="email" id="email" placeholder="example@email.com" required>
+                    <input class="check-validity" type="email" id="email" placeholder="example@email.com" required>
+                    <span></span>
                 </div>
                 <div class="form-row">
                     <label for="pnumber">PHONE NUMBER</label>
@@ -39,11 +43,12 @@
                 </div>
                 <div class="form-row">
                     <label for="pwd">PASSWORD *</label>
-                    <input type="password" id="pwd" required>
+                    <input class="pwd_field" type="password" id="pwd" required>
                 </div>
                 <div class="form-row">
                     <label for="cpwd">CONFIRM PASSWORD *</label>
-                    <input type="password" id="cpwd" required>
+                    <input class="cpwd_field" type="password" id="cpwd" required>
+                    <span class="cpwd-info"></span>
                 </div>
 
                 <button type="submit" class="sign-up-btn">Sign up</button>

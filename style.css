@@ -93,6 +93,22 @@ body{
     border-bottom: 2px solid var(--main-light);
 }
 
+.container .form-container .form-row .check-validity:focus:invalid + span::after{
+    content: url(./img/invalid.png);
+}
+
+.container .form-container .form-row .check-validity:valid + span::after{
+    content: url(./img/correct.png);
+}
+
+.container .form-container .form-row .cpwd-info.valid::after{
+    content: url(./img/correct.png);
+}
+
+.container .form-container .form-row .cpwd_field:focus + .cpwd-info.invalid::after{
+    content: url(./img/invalid.png);
+}
+
 .container .form-container .form-row input::placeholder{
     color: var(--secondary-light);
 }

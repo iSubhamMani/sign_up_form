@@ -3,4 +3,4 @@
 A Sign up form to demonstrate client-side validations.
 
 Title Icon Credit:
-<a href="https://www.flaticon.com/free-icons/google" title="google icons">Google icons created by Driss Lebbat - Flaticon</a>
+<a href="https://www.flaticon.com/authors/driss-lebbat">Driss Lebbat - Flaticon</a>

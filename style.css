@@ -26,8 +26,21 @@ body{
 
 .container > .hero-image{
     width: 50%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--main-dark);
+}
+
+.container > .hero-image > .svg-attribute{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container > .hero-image > .svg-attribute > a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .container > .hero-image > img{
@@ -156,7 +169,7 @@ body{
     }
 
     .container .form-container > h1{
-        font-size: clamp(1.8rem, 7vw, 2.4rem);
+        font-size: clamp(2rem, 8vw, 2.4rem);
     }
     .container .form-container > .get-started-txt{
         font-size: clamp(1.2rem, 5vw, 1.4rem);

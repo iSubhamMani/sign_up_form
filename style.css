@@ -181,7 +181,7 @@ input, button, label{
     font-weight: 600;
     margin-bottom: 10px;
     cursor: pointer;
-    transition: 0.4s;
+   
     
     width: min(80%, 400px);
 }

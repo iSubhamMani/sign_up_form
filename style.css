@@ -19,6 +19,10 @@ body{
     display: flex;
 }
 
+input, button, label{
+    font-family: inherit;
+}
+
 .container{
     flex-grow: 1;
     display: flex;
@@ -180,10 +184,10 @@ body{
     }
 
     .container .form-container .form-row label{
-        font-size: clamp(0.8rem, 3vw, 1rem);
+        font-size: clamp(0.9rem, 3vw, 1rem);
     }
 
     .container .form-container .form-row input{
-        font-size: clamp(1rem, 4vw ,1.4rem);
+        font-size: clamp(1.2rem, 4vw ,1.4rem);
     }
 }

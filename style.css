@@ -28,27 +28,38 @@ input, button, label{
     display: flex;
 }
 
-.container > .hero-image{
+.container > .hero{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--main-dark);
+    position: relative;
 }
 
-.container > .hero-image > .svg-attribute{
+.container > .hero > .logo{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+.container > .hero > .svg-attribute{
     color: #fff;
     margin-bottom: 20px;
     font-size: 1rem;
 }
 
-.container > .hero-image > .svg-attribute > a{
+.container > .hero > .svg-attribute > a{
     text-decoration: none;
     color: #fff;
     border-bottom: 1px solid #fff;
 }
 
-.container > .hero-image > img{
+.container > .hero > img{
     width: 100%;
 }
 
@@ -111,20 +122,48 @@ input, button, label{
     border-bottom: 2px solid var(--main-light);
 }
 
+.container .form-container .form-row .check-validity:valid + span::after{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 .container .form-container .form-row .check-validity:focus:invalid + span::after{
-    content: url(./img/invalid.png);
+    content: '\f00d';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #e81a1a;
 }
 
 .container .form-container .form-row .check-validity:valid + span::after{
-    content: url(./img/correct.png);
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #46DD6C;
+}
+
+.container .form-container .form-row .cpwd-info.valid{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container .form-container .form-row .cpwd-info.valid::after{
-    content: url(./img/correct.png);
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #46DD6C;
 }
 
 .container .form-container .form-row .cpwd_field:focus + .cpwd-info.invalid::after{
-    content: url(./img/invalid.png);
+    content: '\f00d';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #e81a1a;
 }
 
 .container .form-container .form-row input::placeholder{
@@ -163,7 +202,7 @@ input, button, label{
         flex-direction: column;
     }
 
-    .container > .hero-image{
+    .container > .hero{
         width: 100%;
     }
 
